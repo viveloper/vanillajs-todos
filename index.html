@@ -4,26 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .done {
+        text-decoration: line-through;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script>
-      const ReactDOM = {
-        render: function () {},
-      };
+    <header>todo list</header>
+    <form class="input-form">
+      <input type="text" />
+      <button type="submit">Submit</button>
+    </form>
+    <ul class="todo-list"></ul>
 
-      const React = {
-        createElement: function () {},
-      };
-
-      function Header(props) {
-        return React.createElement('header', null, `Hello ${props.title}`);
-      }
-
-      ReactDOM.render(
-        React.createElement(Header, { title: 'World' }, null),
-        document.getElementById('root')
-      );
-    </script>
+    <script src="./src/index.js"></script>
   </body>
 </html>
